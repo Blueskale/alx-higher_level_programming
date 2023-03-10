@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 
+if __name__ == "__main__":
+    """Print all names defined by hidden_4 module."""
+    import hidden_4
 
-def magic_calculation(a, b):
-    """Match bytecode provided by Holberton School."""
-    from magic_calculation_102 import add, sub
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
+            print(name)
 
-    if a < b:
-        c = add(a, b)
-        for i in range(4, 6):
-            c = add(c, i)
-        return (c)
 
-    else:
-        return(sub(a, b))
