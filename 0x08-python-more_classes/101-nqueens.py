@@ -113,7 +113,6 @@ def coordinate_format(candidates):
     return holberton
 
 # init candidates list with first column of 0s
-
 candidates = []
 candidates.append(board_column_gen())
 
@@ -124,7 +123,7 @@ for col in range(N):
     # test each candidate from previous round, at current column
     for matrix in candidates:
         # for every row in that candidate's rightmost column
-    for row in range(N):
+        for row in range(N):
             # are there any conflicts in placing a queen at those coordinates?
             if new_queen_safe(matrix, row, col):
                 # no? then create a "child" (copy) of that candidate
