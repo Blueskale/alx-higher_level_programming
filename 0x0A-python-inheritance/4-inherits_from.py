@@ -10,5 +10,4 @@ def inherits_from(obj, a_class):
     obj: an object.
     a_class: a class.
     """
-    return(issubclass(type(obj), a_class) and not (type(obj) is a_class)
-)
+    return(issubclass(type(obj), a_class) and not (type(obj) is a_class))
