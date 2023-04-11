@@ -1,16 +1,13 @@
 #!/usr/bin/python3
 """
-Module containing the MyList class
+MyList class module.
+Define MyList class.
 """
 
 
 class MyList(list):
-    """
-    Subclass of the built-in list class
-    """
-    def print_sorted(self):
-        """
-        Prints the list in ascending order
-        """
-        print(sorted(self))
+    """Define a MyList."""
 
+    def print_sorted(self):
+        """Print the list sorted"""
+        print(sorted(self))
