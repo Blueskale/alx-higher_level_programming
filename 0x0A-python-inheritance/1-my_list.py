@@ -14,3 +14,4 @@ class MyList(list):
         """Methot that sorted a list"""
 
         print(sorted(list(self)))
+
