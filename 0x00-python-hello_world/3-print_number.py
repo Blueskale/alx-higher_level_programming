@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-number = 98
-print(f"{number:d} Battery street")
+for letters in range(97, 123):
+	if chr(letters) != 'q' and chr(letters) != 'e':
+		print(f'{chr(letters)}', end = "") 
